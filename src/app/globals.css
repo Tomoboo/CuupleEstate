@@ -50,11 +50,17 @@
     opacity: 0;
   }
 
-  /* 日本語見出し・本文の不自然な単字改行を抑える */
+  /* 本文・見出し共通（keep-all は使わない：連続する日本語が折り返されず横にはみ出すため） */
   .jp-text {
+    word-break: normal;
+    overflow-wrap: anywhere;
+    line-break: strict;
+  }
+
+  /* キャッチコピーなど短文の見出しだけ、単字改行を抑えたい場合に併用 */
+  .jp-heading-tight {
     word-break: keep-all;
     overflow-wrap: break-word;
-    line-break: strict;
   }
 
   .jp-heading-lines {

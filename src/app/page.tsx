@@ -78,7 +78,7 @@ export default function Home() {
           </div>
           <h1
             id="catchcopy"
-            className="jp-text jp-heading-lines font-heading mb-6 animate-fade-up text-[clamp(1.375rem,4.5vw+0.4rem,3rem)] font-bold leading-snug tracking-tight text-brown md:text-5xl md:leading-relaxed"
+            className="jp-text jp-heading-tight jp-heading-lines font-heading mb-6 animate-fade-up text-[clamp(1.375rem,4.5vw+0.4rem,3rem)] font-bold leading-snug tracking-tight text-brown md:text-5xl md:leading-relaxed"
           >
             <span className="block">
               <span className="inline-block">ふたり暮らしの</span>
@@ -152,15 +152,15 @@ export default function Home() {
 
       {/* Service */}
       <section className="bg-cream px-4 py-14 sm:px-6 sm:py-20 md:px-12">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-4xl min-w-0">
           <h2 className="jp-text font-heading mb-10 text-center text-xl font-bold text-brown sm:mb-14 sm:text-2xl md:text-3xl">
             カップル不動産ができること
           </h2>
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
+          <div className="grid min-w-0 gap-6 sm:gap-8 md:grid-cols-2">
             {services.map((item) => (
               <div
                 key={item.num}
-                className="rounded-2xl bg-white p-6 shadow-sm transition-shadow hover:shadow-md sm:p-8"
+                className="min-w-0 rounded-2xl bg-white p-6 shadow-sm transition-shadow hover:shadow-md sm:p-8"
               >
                 <div className="mb-4 flex size-12 items-center justify-center rounded-full bg-warm">
                   <span className="font-heading font-bold text-brown">
@@ -170,7 +170,7 @@ export default function Home() {
                 <h3 className="jp-text font-heading mb-3 text-base font-bold text-brown sm:text-lg">
                   {item.title}
                 </h3>
-                <p className="jp-text text-sm leading-relaxed text-brownLight">
+                <p className="jp-text min-w-0 text-sm leading-relaxed text-brownLight">
                   {item.body}
                 </p>
               </div>
